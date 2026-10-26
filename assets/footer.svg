@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="120" viewBox="0 0 1000 120" role="img" aria-label="Oscilloscope trace of a damped step response settling to its reference">
+  <title>Step response settling · end of transmission</title>
+  <defs>
+    <pattern id="g" width="25" height="20" patternUnits="userSpaceOnUse">
+      <path d="M25 0H0V20" fill="none" stroke="#12263b"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1000" height="120" rx="14"/></clipPath>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "DejaVu Sans Mono", monospace; }
+      .dim { fill: #4f7396; font-size: 11px; letter-spacing: 1.5px; }
+      .trace { stroke-dasharray: 1400; stroke-dashoffset: 1400; animation: draw 6s ease-out infinite; }
+      @keyframes draw { 0% { stroke-dashoffset: 1400; opacity: 1; } 60% { stroke-dashoffset: 0; opacity: 1; } 90% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+    </style>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="120" fill="#0a1522"/>
+    <rect width="1000" height="120" fill="url(#g)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="999" height="119" rx="14" fill="none" stroke="#1f4466"/>
+  <!-- reference r = 1 -->
+  <path d="M40 40H960" stroke="#ffc857" stroke-opacity="0.6" stroke-dasharray="6 6"/>
+  <text class="mono dim" x="960" y="32" text-anchor="end" fill="#ffc857">r = 1</text>
+  <!-- y(t) = 1 - e^(-ζωt)(cos ωd t + ...) , drawn as an underdamped response -->
+  <path class="trace" fill="none" stroke="#5ce1e6" stroke-width="2.5" stroke-linecap="round"
+        d="M40 96 C 90 96, 110 20, 160 22 S 220 52, 260 50 S 320 34, 360 36 S 420 44, 460 43 S 520 39, 560 39.5 S 620 41, 660 40.8 S 760 40, 960 40"/>
+  <text class="mono dim" x="40" y="112">y(t) → r · overshoot bounded · settled</text>
+  <text class="mono dim" x="960" y="112" text-anchor="end">EOF // thanks for stopping by</text>
+</svg>

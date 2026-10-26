@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Abdurrahman Aderinto, PhD Researcher in Reliable Autonomy and Robotics">
+  <title>Abdurrahman Aderinto · Reliable Autonomy &amp; Robotics</title>
+  <defs>
+    <pattern id="minor" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#12263b" stroke-width="1"/>
+    </pattern>
+    <pattern id="major" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="url(#minor)"/>
+      <path d="M100 0H0V100" fill="none" stroke="#1b3654" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5ce1e6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#5ce1e6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="termbox"><rect x="41" y="185" width="598" height="38" rx="5"/></clipPath>
+    <clipPath id="frame"><rect width="1000" height="300" rx="14"/></clipPath>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "DejaVu Sans Mono", monospace; }
+      .dim { fill: #4f7396; font-size: 11px; letter-spacing: 1.5px; }
+      .name { fill: #e8f3ff; font-size: 42px; font-weight: 700; letter-spacing: 2px; }
+      .role { fill: #5ce1e6; font-size: 18px; }
+      .loc { fill: #8aa9c7; font-size: 14px; }
+      .term { fill: #c9f7d4; font-size: 15px; }
+      .prompt { fill: #5ce1e6; font-size: 15px; }
+      .led-label { fill: #8aa9c7; font-size: 11px; letter-spacing: 1.5px; }
+
+      /* typing line: four phrases share a 20s cycle, 5s each */
+      .phrase { opacity: 0; animation: show 20s linear infinite; }
+      .p1 { animation-delay: -15s; }
+      .p2 { animation-delay: -10s; }
+      .p3 { animation-delay: -5s; }
+      @keyframes show { 0%, 24.9% { opacity: 1; } 25%, 100% { opacity: 0; } }
+
+      .cover { animation: 20s infinite; }
+      .c0 { animation-name: t0; }
+      .c1 { animation-name: t1; animation-delay: -15s; }
+      .c2 { animation-name: t2; animation-delay: -10s; }
+      .c3 { animation-name: t3; animation-delay: -5s; }
+      @keyframes t0 { 0% { transform: translateX(0); animation-timing-function: steps(46, end); } 12%, 100% { transform: translateX(414px); } }
+      @keyframes t1 { 0% { transform: translateX(0); animation-timing-function: steps(48, end); } 12%, 100% { transform: translateX(432px); } }
+      @keyframes t2 { 0% { transform: translateX(0); animation-timing-function: steps(43, end); } 12%, 100% { transform: translateX(387px); } }
+      @keyframes t3 { 0% { transform: translateX(0); animation-timing-function: steps(41, end); } 12%, 100% { transform: translateX(369px); } }
+      .caret { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+
+      .led { animation: pulse 2.4s ease-in-out infinite; }
+      .led.b { animation-delay: .8s; }
+      .led.c { animation-delay: 1.6s; }
+      @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+
+      .sweep { animation: sweep 6s linear infinite; }
+      @keyframes sweep { 0% { transform: translateX(-60px); } 100% { transform: translateX(1060px); } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="300" fill="#0a1522"/>
+    <rect width="1000" height="300" fill="url(#major)"/>
+    <!-- scanner sweep -->
+    <rect class="sweep" x="0" y="0" width="60" height="300" fill="#5ce1e6" opacity="0.035"/>
+  </g>
+  <rect x="0.5" y="0.5" width="999" height="299" rx="14" fill="none" stroke="#1f4466"/>
+
+  <!-- registration marks -->
+  <g stroke="#2d5a82" stroke-width="1.5" fill="none">
+    <path d="M18 34V18H34"/><path d="M966 18H982V34"/>
+    <path d="M18 266V282H34"/><path d="M966 282H982V266"/>
+  </g>
+
+  <!-- drawing labels -->
+  <text class="mono dim" x="40" y="44">AA-LAB // FIG. 01 // RELIABLE AUTONOMY &amp; ROBOTICS</text>
+  <text class="mono dim" x="960" y="44" text-anchor="end">DWG AA-001 · REV 2026</text>
+
+  <!-- identity -->
+  <text class="mono name" x="40" y="104">ABDURRAHMAN ADERINTO</text>
+  <text class="mono role" x="40" y="138">PhD Researcher · Reliable Autonomy &amp; Robotics</text>
+  <text class="mono loc" x="40" y="164">KFUPM · Dhahran, Saudi Arabia</text>
+
+  <!-- terminal line -->
+  <rect x="40" y="184" width="600" height="40" rx="6" fill="#06101a" stroke="#1f4466"/>
+  <text class="mono prompt" x="54" y="209">❯</text>
+
+  <g clip-path="url(#termbox)"><g class="phrase p0">
+    <text class="mono term" x="76" y="209" textLength="414" lengthAdjust="spacing">stabilizing bilateral teleoperation in contact</text>
+    <g class="cover c0">
+      <rect class="caret" x="76" y="194" width="9" height="20" fill="#5ce1e6"/>
+      <rect x="86" y="190" width="550" height="30" fill="#06101a"/>
+    </g>
+  </g></g>
+  <g clip-path="url(#termbox)"><g class="phrase p1">
+    <text class="mono term" x="76" y="209" textLength="432" lengthAdjust="spacing">lifting nonlinear dynamics via Koopman operators</text>
+    <g class="cover c1">
+      <rect class="caret" x="76" y="194" width="9" height="20" fill="#5ce1e6"/>
+      <rect x="86" y="190" width="550" height="30" fill="#06101a"/>
+    </g>
+  </g></g>
+  <g clip-path="url(#termbox)"><g class="phrase p2">
+    <text class="mono term" x="76" y="209" textLength="387" lengthAdjust="spacing">certifying reachable sets for safe autonomy</text>
+    <g class="cover c2">
+      <rect class="caret" x="76" y="194" width="9" height="20" fill="#5ce1e6"/>
+      <rect x="86" y="190" width="550" height="30" fill="#06101a"/>
+    </g>
+  </g></g>
+  <g clip-path="url(#termbox)"><g class="phrase p3">
+    <text class="mono term" x="76" y="209" textLength="369" lengthAdjust="spacing">open to research &amp; industry collaboration</text>
+    <g class="cover c3">
+      <rect class="caret" x="76" y="194" width="9" height="20" fill="#5ce1e6"/>
+      <rect x="86" y="190" width="550" height="30" fill="#06101a"/>
+    </g>
+  </g></g>
+
+  <!-- status LEDs -->
+  <g class="mono">
+    <circle class="led" cx="46" cy="256" r="5" fill="#3ddc84"/>
+    <text class="led-label" x="58" y="260">SYS ONLINE</text>
+    <circle class="led b" cx="186" cy="256" r="5" fill="#5ce1e6"/>
+    <text class="led-label" x="198" y="260">LOOP STABLE</text>
+    <circle class="led c" cx="336" cy="256" r="5" fill="#ffc857"/>
+    <text class="led-label" x="348" y="260">SAFETY CERTIFIED</text>
+  </g>
+
+  <!-- workspace / reachable set -->
+  <path d="M686 220 A155 155 0 0 1 994 220" fill="#5ce1e6" fill-opacity="0.05" stroke="#5ce1e6" stroke-opacity="0.45" stroke-dasharray="5 6"/>
+  <path d="M770 220 A70 70 0 0 1 910 220" fill="none" stroke="#5ce1e6" stroke-opacity="0.25" stroke-dasharray="3 5"/>
+  <text class="mono dim" x="902" y="242">R(t) ⊆ X_safe</text>
+
+  <!-- 2-link arm -->
+  <g>
+    <rect x="808" y="232" width="64" height="18" rx="3" fill="#13304d" stroke="#2d5a82"/>
+    <rect x="790" y="250" width="100" height="8" rx="2" fill="#1b3654"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="-38 840 220; 30 840 220; -10 840 220; -38 840 220" keyTimes="0;0.4;0.7;1" dur="8s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1"/>
+      <rect x="831" y="135" width="18" height="90" rx="9" fill="#1e4a73" stroke="#5ce1e6" stroke-width="1.5"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="55 840 140; -35 840 140; 45 840 140; 55 840 140" keyTimes="0;0.4;0.7;1" dur="8s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1"/>
+        <rect x="833" y="74" width="14" height="72" rx="7" fill="#1e4a73" stroke="#5ce1e6" stroke-width="1.5"/>
+        <!-- gripper -->
+        <path d="M831 72 v-14 M849 72 v-14" stroke="#e8f3ff" stroke-width="3" stroke-linecap="round"/>
+        <path d="M829 74 h22" stroke="#e8f3ff" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="840" cy="62" r="14" fill="url(#glow)" opacity="0.6">
+          <animate attributeName="opacity" values="0.6;0.15;0.6" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="840" cy="140" r="6" fill="#0a1522" stroke="#ffc857" stroke-width="2"/>
+      </g>
+      <circle cx="840" cy="220" r="7" fill="#0a1522" stroke="#ffc857" stroke-width="2"/>
+    </g>
+  </g>
+  <text class="mono dim" x="960" y="276" text-anchor="end">q₁, q₂ ∈ SAFE ENVELOPE</text>
+</svg>
